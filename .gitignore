@@ -1,0 +1,10 @@
+# editor config
+.idea/
+.vscode/
+
+# node modules
+node_modules
+package-lock.json
+
+# logs
+.logs/
