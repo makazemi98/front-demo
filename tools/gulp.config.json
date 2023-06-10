@@ -1,7 +1,7 @@
 {
   "config": {
     "path": {
-      "src": "src"
+      "src": "../{demo}/src"
     },
     "dist": [
       "../{demo}/dist/assets"

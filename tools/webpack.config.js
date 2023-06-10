@@ -12,26 +12,13 @@ const ExcludeAssetsPlugin = require('webpack-exclude-assets-plugin');
 const MergeIntoSingle = require('webpack-merge-and-include-globally/index');
 const RtlCssPlugin = require('rtlcss-webpack-plugin');
 
-// import webpack from 'webpack'
-// import path from 'path'
-// import fs from 'fs'
-// import del from 'del'
-// import glob from 'glob'
-// import CopyWebpackPlugin from 'copy-webpack-plugin'
-// import MiniCssExtractPlugin from 'mini-css-extract-plugin'
-// import TerserJSPlugin from 'terser-webpack-plugin'
-// import CssMinimizerPlugin from 'css-minimizer-webpack-plugin'
-// import WebpackMessages from 'webpack-messages'
-// import ExcludeAssetsPlugin from 'webpack-exclude-assets-plugin'
-// import * as MergeIntoSingle  from 'webpack-merge-and-include-globally'
-// import RtlCssPlugin from 'rtlcss-webpack-plugin'
-
 const dev = false;
 
 // paths
 let rootPath = path.resolve(__dirname, '..');
 const corePath = rootPath;
 const coreSrcPath = corePath + '/src';
+
 // arguments/params from the line command
 const args = getParameters();
 
@@ -469,7 +456,7 @@ function getDemo() {
         demo = key.replace('npm_config_', '');
     }
 
-    return demo === '' ? 'demo25' : demo;
+    return demo === '' ? 'demo1' : demo;
 }
 
 function removeExistingAssets() {

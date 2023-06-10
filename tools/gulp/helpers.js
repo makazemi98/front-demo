@@ -67,8 +67,6 @@ function objectWalkRecursive(array, funcname, userdata) {
   }
 
   for (let key in array) {
-    console.log('***********');
-    console.log(key,Object.prototype.toString.call(array[key]));
     // apply "funcname" recursively only on object
     if (Object.prototype.toString.call(array[key]) === '[object Object]') {
       const funcArgs = [array[key], funcname];
@@ -371,7 +369,7 @@ const getDemo = () => {
     demo = demo[0];
   }
 
-  return demo === '' ? 'demo25' : demo;
+  return demo === '' ? 'demo1' : demo;
 };
 
 const getTheme = () => {
